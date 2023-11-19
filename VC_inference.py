@@ -141,6 +141,6 @@ if __name__ == "__main__":
             btn = gr.Button("Convert!")
             btn.click(vc_fn, inputs=[source_speaker, target_speaker, record_audio, upload_audio],
                       outputs=[message_box, converted_audio])
-    webbrowser.open("http://127.0.0.1:7860")
-    app.launch(share=args.share)
+    webbrowser.open("http://127.0.0.1:9983")
+    app.launch(share=args.share,server_port=9983)
 
